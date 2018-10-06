@@ -9,6 +9,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
@@ -24,6 +25,7 @@ public class JpaonetooneApplication {
 
 
     @Component
+    @Profile("onetoone")
     class OnetoOneApplicationRunner implements ApplicationRunner{
 
         private final WifeRepoService wifeRepository;
