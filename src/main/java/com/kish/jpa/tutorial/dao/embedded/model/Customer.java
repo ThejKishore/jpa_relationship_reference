@@ -1,15 +1,14 @@
 package com.kish.jpa.tutorial.dao.embedded.model;
 
 
-import java.util.Set;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.persistence.CascadeType;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
+import java.util.Set;
 
 @Entity
 public class Customer {
